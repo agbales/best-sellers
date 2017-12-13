@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600)
+@import url(https://fonts.googleapis.com/css?family=Rozha+One)
+
+*
+  box-sizing: border-box
+  background-color: #fff
+  font-family: 'Open Sans', sans-serif
+
+.book-cover
+  display: block
+  margin: 0 auto
+  width: 200px
+  transform: translateY(-30px)
+  
+.entry
+  margin: 30px 0px
+  padding: 20px 50px
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.21)
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.21)
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.21)
+  &:before
+    content:  attr(nyt-rank)
+    font-family: 'Rozha One', serif
+    font-size: 3rem
+    display: inline-block
+    width: 50px
+    height: 50px
+    line-height: 50px
+    padding: 20px 20px
+    text-align: center
+    transform: translate(-100px)
+    border: 4px solid #282c37
+    background-color: #fff
+    border-radius: 50%
+    color: #282c37
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.21)
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.21)  
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.21)
+  
+#best-seller-titles
+  max-width: 475px
+  margin: 120px auto
+  & a
+    margin: 40px 0px 0px 0px
+    text-decoration: none
+    color: #2b90d9
+    line-height: .2
+  & h1, h2, h3, h4
+    color: #282c37
+  & p 
+    color: #333030
+    line-height: 1.4
+  .publisher
+    color: #333030
+  .stats
+    hr
+      opacity: .5
+    & p
+      color: #282c37
+ 
+#masthead
+  position: fixed
+  top: 0
+  left: 0
+  background: #FFF
+  z-index: 9999
+  width: 100%
+  padding: 10px
+  -webkit-box-shadow: 0px 1px 5px 0px #777
+  -moz-box-shadow: 0px 1px 5px 0px #777
+  box-shadow: 0px 1px 5px 0px #777
+  transition: 200ms
+  img
+    transition: 100ms
